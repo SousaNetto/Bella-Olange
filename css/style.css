@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+:root {
+  --orange-color: #fa4a0c;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --darkblue-color: #252b42;
+  --cinza-color: #e2e2e2;
+  --darkcinza-color: #737373;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.nav-container .nav-left .logo {
+  width: 206px;
+  margin-left: 50px;
+}
+#menu {
+  display: none;
+}
+.right .nav-links a {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0px 40px;
+  color: var(--darkblue-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+}
+.right .nav-links a:hover {
+  color: var(--orange-color);
+  transition: 300ms;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  text-decoration-color: var(--orange-color);
+}
+/* style do hero 1 */
+.main-hero {
+  background-image: url("/assets/images/desktop-Hero-Light-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white-color);
+}
+.main-hero .main-content {
+  max-width: 1000px;
+  margin-top: 70px;
+  text-align: center;
+  height: 400px;
+}
+.main-hero .main-content .text-content h1 {
+  font-size: 58px;
+  margin-top: 40px;
+  line-height: 80px;
+  font-family: "Poppins", sans-serif;
+}
+.main-hero .main-content .text-content h4 {
+  font-weight: 100;
+  margin-top: 40px;
+  font-size: 24px;
+}
+.main-hero .main-content .text-content span {
+  font-weight: 600;
+  margin-top: 100px;
+  font-size: 20px;
+}
+/* style dos botões do hero 1 */
+.main-hero .main-content .buttons {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+.main-hero .main-content .buttons .playstore,
+.main-hero .main-content .buttons .appstore {
+  padding: 15px 45px;
+  font-size: 24px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 25px;
+  color: var(--white-color);
+  margin-top: 60px;
+  z-index: 10;
+}
+.main-hero .main-content .buttons .playstore {
+  background-color: var(--orange-color);
+  border: 1px solid transparent;
+}
+.main-hero .main-content .buttons .playstore:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  transition: 500ms;
+}
+.main-hero .main-content .buttons .appstore {
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  border-radius: 25px;
+  padding: 15px 45px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.main-hero .main-content .buttons .appstore:hover {
+  background-color: var(--orange-color);
+  transition: 500ms;
+}
+/* estilos da primeira area 01 */
+.main-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main-area .area-first {
+  text-align: center;
+}
+.main-area .area-first .phone-one {
+  margin-top: -70px;
+  width: 550px;
+  margin-bottom: 30px;
+  animation: scale 3s linear infinite;
+  z-index: -10;
+}
+.main-area .area-first .line {
+  width: 850px;
+  height: 3px;
+  background-color: var(--cinza-color);
+}
+.main-area h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  margin-top: 60px;
+}
+/* estilos da primeira area 02 */
+.area-content-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.area-content-app .area-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  gap: 150px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+.img-invert {
+  order: 1;
+}
+.text-invert {
+  order: 0;
+}
+.area-content-app .text-area h2 {
+  color: var(--orange-color);
+}
+.area-content-app .text-area h1 {
+  font-family: "montserrat", sans-serif;
+  margin: 30px 0px;
+  font-size: 40px;
+  color: var(--darkblue-color);
+}
+.area-content-app .text-area h4 {
+  color: #737373;
+  font-size: 24px;
+  font-weight: 500;
+}
+.area-full .left-area img {
+  width: 300px;
+}
+.area-content-app #area-invert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* estilos da area do primeiro footer  */
+.footer-primary {
+  background-image: url("/assets/images/image-background-footer.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-primary h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.footer-primary h4 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+.footer-primary .buttons .playstore,
+.footer-primary .buttons .appstore {
+  padding: 18px 35px;
+  font-weight: 600;
+  border: 1px solid var(--orange-color);
+  border-radius: 30px;
+  color: var(--white-color);
+}
+.footer-primary .buttons .playstore {
+  background-color: var(--orange-color);
+  margin-right: 10px;
+  font-size: 30px;
+  border: 1px solid transparent;
+}
+.footer-primary .buttons .playstore:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  transition: 500ms;
+}
+.footer-primary .buttons .appstore {
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  font-size: 30px;
+}
+.footer-primary .buttons .appstore:hover {
+  background-color: var(--orange-color);
+  transition: 500ms;
+}
+/* estilos da area do segundo footer  */
+.footer-secondary {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-secondary .logo-footer {
+  cursor: pointer;
+}
+.footer-secondary .social-media {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.footer-secondary .social-media img:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+  cursor: pointer;
+}
+.footer-secondary .subtitle {
+  color: #5c5c5c;
+}
