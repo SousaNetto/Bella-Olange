@@ -98,6 +98,7 @@ body {
   gap: 20px;
   display: flex;
   justify-content: center;
+  
 }
 .main-hero .main-content .buttons .playstore,
 .main-hero .main-content .buttons .appstore {
@@ -223,8 +224,7 @@ body {
 .footer-primary h4 {
   text-align: center;
   font-size: 24px;
-  margin-top: 30px;
-  margin-bottom: 0px;
+  margin: 40px 0;
   font-weight: 400;
 }
 .footer-primary .buttons .playstore,
