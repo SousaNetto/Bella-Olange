@@ -59,7 +59,7 @@ body {
 }
 /* style do hero 1 */
 .main-hero {
-  background-image: url("assets/images/desktop-Hero-Light-1.png");
+  background-image: url("../assets/images/desktop-Hero-Light-1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -205,7 +205,7 @@ body {
 }
 /* estilos da area do primeiro footer  */
 .footer-primary {
-  background-image: url("assets/images/image-background-footer.png");
+  background-image: url("../assets/images/image-background-footer.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
