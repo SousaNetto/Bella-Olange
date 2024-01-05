@@ -80,7 +80,7 @@ body {
 .main-hero .main-content .text-content h1 {
   font-size: 58px;
   margin-top: 40px;
-  line-height: 80px;
+  line-height: 65px;
   font-family: "Poppins", sans-serif;
 }
 .main-hero .main-content .text-content h4 {
@@ -189,6 +189,7 @@ body {
   font-family: "montserrat", sans-serif;
   margin: 30px 0px;
   font-size: 40px;
+  line-height: 40px;
   color: var(--darkblue-color);
 }
 .area-content-app .text-area h4 {
