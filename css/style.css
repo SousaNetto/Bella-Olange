@@ -197,7 +197,8 @@ body {
   font-weight: 500;
 }
 .area-full .left-area img {
-  width: 300px;
+  width: 200px;
+  filter: drop-shadow(5px 5px 5px #ccc);
 }
 .area-content-app #area-invert {
   display: flex;
